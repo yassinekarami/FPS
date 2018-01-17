@@ -9,6 +9,9 @@ public class RayCastShoot : MonoBehaviour {
     RaycastHit hit;
     Ray ray;
 
+    public GameObject bulletImpact;
+
+
 	// Use this for initialization
 	void Start () {
 
@@ -30,6 +33,11 @@ public class RayCastShoot : MonoBehaviour {
                     hit.collider.GetComponent<Enemy>().enemyHealth -=  GetComponent<Shoot>().dammage;
                 }
 
+                else
+                {
+                    GameObject toInstantiate = Instantiate(bulletImpact, hit.point, hit.transform.rotation);
+                    Destroy(toInstantiate, 5);
+                }
                 
             }
 

@@ -13,7 +13,6 @@ public class MissionScript : MonoBehaviour {
 
     private void Update()
     {
-        Debug.Log(LockedDoor);
     }
 
     public void DesactiveTxt () {

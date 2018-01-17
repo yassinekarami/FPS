@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8200000}
   m_Layer: 0
   m_Name: FPSController
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,7 +46,7 @@ Transform:
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.3426008, y: -2.18, z: -22.009195}
-  m_LocalScale: {x: 1, y: 1.4250003, z: 1}
+  m_LocalScale: {x: 1, y: 1.1043752, z: 1}
   m_Children:
   - {fileID: 400002}
   - {fileID: 4113936357021938}
@@ -61,8 +61,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.8, z: 1.06}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.8, z: 2.8}
+  m_LocalScale: {x: 1, y: 1, z: 0.5999999}
   m_Children:
   - {fileID: 4921855236411148}
   - {fileID: 4747921468803984}
@@ -2999,6 +2999,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a127088f658433e46889b1918d5ef49f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletImpact: {fileID: 1000011474877646, guid: 4e6f078df2595dd48b2dbe42fc05cf81,
+    type: 2}
 --- !u!114 &114447643146375564
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3044,6 +3046,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a127088f658433e46889b1918d5ef49f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletImpact: {fileID: 1000011474877646, guid: 4e6f078df2595dd48b2dbe42fc05cf81,
+    type: 2}
 --- !u!124 &124728764006615734
 Behaviour:
   m_ObjectHideFlags: 1
