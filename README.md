@@ -1,1 +1,1 @@
-the main scene is in the "Subway Asset" folder.
+the main scene is in the "Subway set" folder.
