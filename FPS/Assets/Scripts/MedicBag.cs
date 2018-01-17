@@ -20,8 +20,12 @@ public class MedicBag : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        audioSource.PlayOneShot(medicBoxAudioClip);
-
-        PanelUI.UpdateCharaterHealth();
+        if (other.gameObject.tag == "Player")
+        {
+            audioSource.PlayOneShot(medicBoxAudioClip);
+            PanelUI.UpdateCharaterHealth();
+            Destroy(gameObject);
+        }
+       
     }
 }

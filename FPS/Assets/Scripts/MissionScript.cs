@@ -7,6 +7,7 @@ public class MissionScript : MonoBehaviour {
     public GameObject PanelTexte;
     public static bool LockedDoor = true;
 	void Start () {
+
         DesactiveTxt();
        
 	}
